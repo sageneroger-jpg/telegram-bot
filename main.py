@@ -315,7 +315,7 @@ async def back_to_results(update, context):
 def main():
     app = ApplicationBuilder().token(os.getenv("BOT_TOKEN")).build()
 
-    app.add_handler(CommandHandler("bb", buscar))
+    app.add_handler(CommandHandler("bbb", buscar))
     app.add_handler(CallbackQueryHandler(change_page, pattern="^page"))
     app.add_handler(CallbackQueryHandler(select_manga, pattern="^select"))
     app.add_handler(CallbackQueryHandler(download_all, pattern="^download_all"))
