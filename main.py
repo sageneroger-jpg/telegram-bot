@@ -89,7 +89,7 @@ async def buscar(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     query_text = " ".join(context.args)
     if not query_text:
-        await update.message.reply_text("Use /bb <nome>")
+        await update.message.reply_text("Use /bbb <nome>")
         return
 
     msg = await update.message.reply_text("🔎 Buscando em todas as fontes...")
